@@ -57,6 +57,7 @@ html, body {
 	height: 100%;
 	font-size: 62.5%;
 	margin: 0 auto;
+	background: @dmain;
 }
 // Variables
 @head: 'Indie Flower', cursive;
@@ -94,7 +95,7 @@ h3 {
   h2 {
 	  font-size: 3.5rem;
 	  font-family: @bold;
-	  padding-left 20%;
+	  padding-left: 20%;
 	  color: @alt;
   }
 
@@ -102,3 +103,29 @@ h3 {
 	  font-size: 2rem;
 	  font-family: Georgia, 'Times New Roman', Times, serif;
   }
+
+.header {
+	.center();
+	background: @main;
+	height: 10%;
+
+	h1 {
+		font-size: 4rem;
+		font-family: @head;
+		width: 10%;
+		border-bottom: dashed 3px skyblue;
+		color: @alt;
+	}
+}
+
+.nav {
+	font-size: 2rem;
+	width: 60%;
+	.spacing() ;
+
+	a {
+		text-decoration: none;
+		color: @alt;
+		font-family: @text;
+	}
+}

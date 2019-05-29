@@ -135,6 +135,7 @@ body {
   height: 100%;
   font-size: 62.5%;
   margin: 0 auto;
+  background: #202F68;
 }
 h3 {
   font-size: 2.5rem;
@@ -144,4 +145,37 @@ h3 {
 h2 {
   font-size: 3.5rem;
   font-family: 'Satisfy', cursive;
+  padding-left: 20%;
+  color: #e6eceb;
+}
+p {
+  font-size: 2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2b62ad;
+  height: 10%;
+}
+.header h1 {
+  font-size: 4rem;
+  font-family: 'Indie Flower', cursive;
+  width: 10%;
+  border-bottom: dashed 3px skyblue;
+  color: #e6eceb;
+}
+.nav {
+  font-size: 2rem;
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  padding: 50px;
+}
+.nav a {
+  text-decoration: none;
+  color: #e6eceb;
+  font-family: 'Shadows Into Light', cursive;
 }
