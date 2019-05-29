@@ -54,6 +54,162 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size: 62.5%;
+	margin: 0 auto;
+}
+
+// VAriables
+@text: #CEEDFF;
+@main:#3EA3E0;
+@dmain: #335084;
+@accentl: #7ad0ea;
+@accentd: #0969e2;
+@hand: 'Indie Flower', cursive;
+@head: 'Satisfy', cursive;
+@slant: 'Shadows Into Light', cursive;
+// Mixins
+.styling () {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.spacing () {
+	border: dashed 1px @text;
+	padding: 20px;
+	margin: 20px;
+}
+
+//code
+h2 {
+	font-size: 3.5rem;
+	font-family: @head;
+	padding-left: 20vw;
+	color: @accentd;
+}
+
+h3 {
+	font-size: 2.5rem;
+	font-family: @slant;
+}
+
+p {
+	font-size: 2rem;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header {
+	.styling();
+	background: @dmain;
+	height: 20vh;
+
+	@media screen ( max-width 500px ) {
+		display: flex;
+		flex-direction: column;}
+	
+			h1 {
+		font-size: 5rem;
+		font-family: @hand;
+		border-bottom: dashed 1px gray;
+		width: 20%;
+		align-items: center;
+			}
+
+			.nav {
+		font-size: 2rem;
+		width: 60vw;
+		display: flex;
+		justify-content: space-between;
+
+		@media screen ( max-width 500px ) {
+			width: 90vw;
+			padding: 15px;
+			border: 1px solid black;
+			display: flex;
+			flex-direction: column;
+		}
+
+			a {
+			text-decoration: none;
+			width: 15%;
+			color: @text;
+			font-family: @slant;
+				}
+			}
+	}//header
+
+.content {
+	font-size: 2rem;
+	background: @main;
+	display: flex;
+	justify-content: space-around;
+
+	@media screen ( max-width 500px) {
+		display: flex;
+		flex-direction: column;
+		width:80%;}
+	
+
+		.intro {
+			width: 45vw;
+			.spacing();}
+
+
+		.skills {
+			width: 45vw;
+			.spacing();}
+}
+
+
+.content2 {
+	font-size: 2rem;
+	background: @main;
+
+	@media screen ( max-width 500px) {
+		display: flex;
+		flex-direction: column;
+	}
+		.work {
+		padding: 20px;
+		.spacing();
+		margin: 0px;
+		}
+		.history {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-evenly;
+		margin: 0;
+		}
+}
+
+.footer {
+	background: @dmain;
+	height: 15vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 20px;
+
+	@media screen ( max-width 500px) {
+		display: none;
+		}	
+	
+			.nav {
+		font-size: 2rem;
+		width: 80vw;
+		padding-top: 40px;
+		display: flex;
+		justify-content: space-evenly;
+		a {
+			text-decoration: none;
+			width: 20%;
+			color: @text;
+			font-family: @slant;
+		}
+			}
+			.address {
+		width: 20vw;
+		padding: 20px;
+			}
 }
 
