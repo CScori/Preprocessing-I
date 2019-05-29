@@ -54,6 +54,30 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size: 62.5%;
+	margin: 0 auto;
+}
+// Variables
+@head: 'Indie Flower', cursive;
+@bold: 'Satisfy', cursive;
+@text: 'Shadows Into Light', cursive;
+@main: #2b62ad;
+@dmain: #202F68;
+@accent1: #6882a5;
+@accentd: #1a2244;
+@alt: #e6eceb;
+//  Mixins
+.spacing () {
+	display: flex;
+	justify-content: space-around;
+	margin: 20px;
+	padding: 50px;
+}
+
+.center () {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
