@@ -107,7 +107,12 @@ h3 {
 .header {
 	.center();
 	background: @main;
-	height: 10%;
+	height: 13%;
+
+	@media (max-width: 500px) {
+		justify-content: space-around;
+		width: 100%;
+	}
 
 	h1 {
 		font-size: 4rem;
@@ -115,6 +120,10 @@ h3 {
 		width: 10%;
 		border-bottom: dashed 3px skyblue;
 		color: @alt;
+
+		@media (max-width: 500px) {
+			border: 1px;
+		}
 	}
 }
 
@@ -123,9 +132,17 @@ h3 {
 	width: 60%;
 	.spacing() ;
 
+	@media (max-width: 500px) {
+		flex-direction: column;
+		padding: 0px;
+		margin: 0 0 0 100px;
+		width: 50%;
+	}
+
 	a {
 		text-decoration: none;
 		color: @alt;
 		font-family: @text;
+
 	}
 }
