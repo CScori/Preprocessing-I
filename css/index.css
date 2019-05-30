@@ -274,3 +274,16 @@ p {
   font-size: 1.5rem;
   color: lightgrey;
 }
+.footer {
+  background: #1a2244;
+  height: 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .address {
+  font-size: 1.5rem;
+  width: 11%;
+  border-bottom: dashed 3px skyblue;
+  color: #e6eceb;
+}
