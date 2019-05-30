@@ -171,7 +171,7 @@ p {
 .header h1 {
   font-size: 4rem;
   font-family: 'Indie Flower', cursive;
-  width: 10%;
+  width: 19%;
   border-bottom: dashed 3px skyblue;
   color: #e6eceb;
 }
@@ -207,6 +207,13 @@ p {
   margin: 20px;
   padding: 50px;
 }
+@media (max-width: 500px) {
+  .content {
+    flex-direction: column;
+    width: 90%;
+    margin-bottom: 50px;
+  }
+}
 .content .intro {
   width: 45%;
   border: dashed 1px #6882a5;
@@ -214,10 +221,22 @@ p {
   padding: 35px;
   color: gray;
 }
+@media (max-width: 500px) {
+  .content .intro {
+    width: 95%;
+    margin: 20px;
+  }
+}
 .content .skills {
   width: 45%;
   border: dashed 1px #6882a5;
   background: #1a2244;
   padding: 35px;
   color: gray;
+}
+@media (max-width: 500px) {
+  .content .skills {
+    width: 95%;
+    margin: 20px;
+  }
 }

@@ -121,7 +121,7 @@ h3 {
 	h1 {
 		font-size: 4rem;
 		font-family: @head;
-		width: 10%;
+		width: 19%;
 		border-bottom: dashed 3px skyblue;
 		color: @alt;
 
@@ -154,12 +154,22 @@ h3 {
 .content {
 	.spacing();
 
+	@media (max-width: 500px) {
+		flex-direction: column;
+		width: 90%;
+		margin-bottom: 50px;
+	}
 	.intro {
 		width: 45%;
 		border: dashed 1px @accent1;
 		background: @accentd;
 		padding: 35px;	
 		color: gray;
+
+		@media (max-width: 500px) {
+			width: 95%;
+			margin: 20px;
+		}
 	}
 	.skills {
 		width: 45%;
@@ -167,5 +177,10 @@ h3 {
 		background: @accentd;
 		padding: 35px;	
 		color: gray;
+
+		@media (max-width: 500px) {
+			width: 95%;
+			margin: 20px;
+		}
 	}
 }
