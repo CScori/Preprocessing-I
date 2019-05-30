@@ -240,3 +240,27 @@ p {
     margin: 20px;
   }
 }
+.content2 {
+  border: dashed 1px #6882a5;
+  padding: 15px;
+}
+.content2 .work {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  padding: 50px;
+  flex-direction: row-reverse;
+  padding: 10px;
+}
+.content2 .history {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  padding: 50px;
+  flex-direction: row-reverse;
+  padding: 10px;
+}
+.content2 .history p {
+  font-size: 1.5rem;
+  color: lightgrey;
+}
