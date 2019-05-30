@@ -188,16 +188,25 @@ h3 {
 .content2 {
 	border: dashed 1px @accent1;
 	padding: 15px;
+
 	.work {
 		.spacing() ;
 		flex-direction: row-reverse;
 		padding: 10px;
+
+		@media (max-width: 500px) {
+			flex-direction: column-reverse;
+		}
 	}
 
 	.history {
 		.spacing() ;
 		flex-direction: row-reverse;
 		padding: 10px;
+
+		@media (max-width: 500px) {
+			display: none;
+		}
 
 		p {
 			font-size: 1.5rem;

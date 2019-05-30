@@ -252,6 +252,11 @@ p {
   flex-direction: row-reverse;
   padding: 10px;
 }
+@media (max-width: 500px) {
+  .content2 .work {
+    flex-direction: column-reverse;
+  }
+}
 .content2 .history {
   display: flex;
   justify-content: space-around;
@@ -259,6 +264,11 @@ p {
   padding: 50px;
   flex-direction: row-reverse;
   padding: 10px;
+}
+@media (max-width: 500px) {
+  .content2 .history {
+    display: none;
+  }
 }
 .content2 .history p {
   font-size: 1.5rem;
